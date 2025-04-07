@@ -10,7 +10,7 @@ export default function Favorites() {
 	const { favoritesState } = useContext(FavoritesContext);
 	const { news } = favoritesState;
 	// Extragem functia de modificare a localStorage-ului.
-	const [_, setLocalStorageState] = useLocalStorage(
+	const [setLocalStorageState] = useLocalStorage(
 		"favorites",
 		favoritesState
 	);
