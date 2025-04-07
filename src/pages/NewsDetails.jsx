@@ -34,7 +34,7 @@ export default function NewsDetails() {
 	const formattedDate = getFormattedDate(date);
 
 	// Extragem functia de modificare a localStorage-ului. Nu avem nevoie de state-ul din localStorage, conventia este ca pentru variabile neutilizate sa punem denumirea _.
-	const [_, setLocalStorageState] = useLocalStorage(
+	const [setLocalStorageState] = useLocalStorage(
 		"favorites",
 		favoritesState
 	);
